@@ -27,7 +27,7 @@ export default {
 
     @media (min-width: 1024px) {
         .nav {
-            bottom: 150px;
+            bottom: 120px;
             right: 100px;
         }
     }

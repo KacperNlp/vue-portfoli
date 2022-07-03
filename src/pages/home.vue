@@ -46,7 +46,7 @@ export default {
 
     @media (min-width: 1024px) {
         .home {
-            grid-gap: 50px;
+            grid-gap: 30px;
             grid-template-columns: 4fr 3fr;
             grid-template-rows: 1fr
         }
@@ -64,16 +64,34 @@ export default {
         box-shadow:inset 0 0 20px #000;
     }
 
+    @media (min-width: 760px) {
+        .img-background {
+            width: 400px;
+            height: 55vh;
+        }
+    }
+
     @media (min-width: 1024px) {
         .img-background {
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-60%);
-            width: 700px;
+            width: 500px;
+            height: 70vh;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .img-background {
+            width: 600px;
             height: 80vh;
-            background: rgba(78, 78, 78, .3);
-            box-shadow:inset 0 0 20px #000;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .img-background {
+            width: 700px;
         }
     }
 
@@ -84,9 +102,17 @@ export default {
         padding-left: 20px;
     }
 
+    @media (min-width: 760px) {
+        .right-scetion {
+            justify-content: flex-start;
+        }
+    }
+
     @media (min-width: 1024px) {
         .right-scetion {
-            height: 100vh
+            height: 100vh;
+            justify-content: center;
+            padding-left: 0;
         }
     }
 
