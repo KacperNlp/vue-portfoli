@@ -20,12 +20,22 @@ export default {
 
 <style>
     .sm-container {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
+        width: 150px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (min-width: 760px) {
+        .sm-container {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     @media (min-width: 1024px) {

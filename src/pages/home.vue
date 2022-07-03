@@ -66,11 +66,28 @@ export default {
     }
 
     .img-background {
+        position: relative;
         display: block;
-        width: 280px;
-        height: 300px;
+        width: 320px;
+        height: 400px;
         background: rgba(78, 78, 78, .3);
         box-shadow:inset 0 0 20px #000;
+    }
+
+    .home-page-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (min-width: 1024px) {
+        .home-page-img {
+            position: absolute;
+            bottom: 0;
+            top: -10%;
+            width: 110%;
+            height: 110%;
+        }
     }
 
     @media (min-width: 760px) {
@@ -123,16 +140,6 @@ export default {
             height: 100vh;
             justify-content: center;
             padding-left: 0;
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .home-page-img {
-            position: absolute;
-            bottom: 0;
-            top: -10%;
-            width: 110%;
-            height: 110%;
         }
     }
 

@@ -21,8 +21,7 @@ export default {
 
 body {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   color: #EBEFEA;
@@ -30,7 +29,17 @@ body {
 
 .app {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #000;
+}
+
+@media (min-width: 760px) {
+  body {
+    height: 100vh;
+  }
+
+  .app {
+    height: 100vh;
+  }
 }
 </style>
