@@ -1,5 +1,8 @@
 <template>
     <div class="home">
+        <video src="../assets/planet.mp4" class="video-bg" autoplay muted loop="true">
+            <source src="../assets/planet.mp4" type="video/mp4" style="width: 100%; height: 100%">
+        </video>
         <section class="left-scetion top-section">
             <span class="img-background">
                 <img src="@/assets/kacper-photo-black-white.png" alt="Kacper Nalepa - Frontend Web Developer" class="home-page-img"/>
@@ -59,6 +62,7 @@ export default {
 
     .left-scetion {
         position: relative;
+        z-index: 1;
     }
 
     .img-background {
@@ -105,6 +109,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding-left: 20px;
+        z-index: 1;
     }
 
     @media (min-width: 760px) {
@@ -128,6 +133,27 @@ export default {
             top: -10%;
             width: 110%;
             height: 110%;
+        }
+    }
+
+    .video-bg {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100vh;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        z-index: 0;
+        }
+
+    @media (min-width: 1023px) {
+        .video-bg {
+            display: block;
         }
     }
 </style>

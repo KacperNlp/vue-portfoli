@@ -31,6 +31,7 @@ export default {
         bottom: 80vh;
         right: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        z-index: 10;
     }
 
     @media (min-width: 1024px) {
