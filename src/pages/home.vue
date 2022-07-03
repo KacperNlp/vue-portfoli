@@ -15,6 +15,10 @@
             />
             <SocialMediaIcon />
         </section>
+        <NavArrows
+            nextPath="/portfolio"
+            prevPath="/tech-stack"
+        />
     </div>
 </template>
 
@@ -22,12 +26,13 @@
 import Header from '../components/Header.vue'
 import Description from '../components/Description.vue'
 import SocialMediaIcon from '../components/SocialMediaIcon.vue'
+import NavArrows from '../components/NavArrows.vue'
 import { gsap } from 'gsap'
 
 export default {
   name: 'home',
   props: {},
-  components: { Header, Description, SocialMediaIcon },
+  components: { Header, Description, SocialMediaIcon, NavArrows },
   methods: {
     simpleFade () {
       gsap.fromTo(this, {autoAlpha: 1}, {autoAlpha: 0, duration: 0.35})

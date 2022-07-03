@@ -4,17 +4,14 @@
       <source src="./assets/planet.mp4" type="video/mp4" style="width: 100%; height: 100%">
     </video>
     <div class="layer">
-      <router-view/>
+      <router-view :key="$route.path"></router-view>
     </div>
-    <NavArrows/>
   </div>
 </template>
 
 <script>
-import NavArrows from './components/NavArrows.vue'
 export default {
-  name: 'App',
-  components: { NavArrows }
+  name: 'App'
 }
 </script>
 

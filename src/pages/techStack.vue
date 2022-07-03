@@ -1,9 +1,9 @@
 <template>
-    <div class="portfolio">
-        <h1>Portfolio</h1>
+    <div class="tech-stack">
+        <h1>techStack</h1>
         <NavArrows
-            nextPath="/tech-stack"
-            prevPath="/"
+            nextPath="/"
+            prevPath="/portfolio"
         />
     </div>
 </template>
@@ -12,7 +12,7 @@
 import NavArrows from '../components/NavArrows.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'techStack',
   props: {},
   components: {NavArrows}
 }

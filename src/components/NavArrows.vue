@@ -1,17 +1,25 @@
 <template>
     <nav class="nav">
-        <div class="nav-arrow">
+        <router-link class="nav-arrow" :to=prevPath>
             <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <div class="nav-arrow">
+        </router-link>
+        <router-link class="nav-arrow" :to=nextPath>
             <i class="fa-solid fa-arrow-right"></i>
-        </div>
+        </router-link>
     </nav>
 </template>
 
 <script>
 export default {
-  name: 'NavArrows'
+  name: 'NavArrows',
+  props: {
+    nextPath: {
+      type: String
+    },
+    prevPath: {
+      type: String
+    }
+  }
 }
 </script>
 
@@ -42,6 +50,7 @@ export default {
         color: #EBEFEA;
         cursor: pointer;
         transition: .3s;
+        text-decoration: none;
     }
 
     @media (min-width: 1024px) {
